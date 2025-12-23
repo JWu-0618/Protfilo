@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="images/logo2.jpg">
+		<title>Heart</title>
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/spring.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/spring.css"/>
+		<style>
+			#banner {
+				background: url(images/Heart2.jpg) no-repeat;
+				width: 100%;
+				height: 100vh;
+				position: relative;
+				background-size: cover;
+				background-color: black;
+				/* -webkit-mask: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)); */
+				/* -webkit-filter: blur(20px);  /* chrome, opera */
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="banner">
+			<div class="inner"></div>
+			<div id="banner_title">
+				<h1>Heart</h1>
+				<h6>Who lost their heart（Interactive installation）</h6>
+			</div>
+		</div>
+
+		<div id="nav">
+			<div id="bar">
+				<div onclick="homepage()" id="LOGO"><img src="images/shouye2.jpg" /></div>
+				<div>
+					<ul>
+						<li><a href="spring.html">Heart</a></li>
+						<li><a href="summer.html">Seasons</a></li>
+						<li><a href="autumn.html">Alone</a></li>
+						<li><a href="winter.html">UIUX</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="header">
+			<div id="headerResume">
+				<h1>Who lost their heart</h1>
+				<div>
+					<p style="color: Gray">This installation reimagines a “heart–vascular system” as an interactive feedback loop between pressure and perception. </p>
+					<p style="color: Gray">Participants press a bio-inspired heart, feeding simulated cardiac load into the work; stronger force produces stronger “pain” via visual, sonic, and tactile disruption. </p>
+					<p style="color: Gray">By shifting the audience between applying pressure and feeling its consequences, the piece reflects how modern life drives us to unknowingly strain our own bodies. </p>
+					<p style="color: Gray">Through technological feedback, it reveals a “silent honesty” about burden, pain, and self-awareness.</p>
+				</div>
+			</div>
+			<img src="images/Heart 4.jpg" />
+			<img src="images/Heart 3.jpg" />
+		</div>
+
+		<div id="clear"></div>
+
+		<div id="divides">
+			<h3>Heart</h3>
+			<p>who lost their heart</p>
+		</div>
+		<div class="img_content">
+			<ul id="img">
+				<li><img src="images/Heart 8.jpg" /> </li>
+				<li><img src="images/Heart 5.jpg" /> </li>
+				<li><img src="images/Heart 7.jpg" /> </li>
+				<li><img src="images/Heart 6.jpg" /> </li>
+				<li><img src="images/Heart 9.jpg" /> </li>
+				<li><img src="images/Heart 10.jpg" /> </li>
+			</ul>
+		</div>
+		<script type="text/javascript"> 
+		function scrollLeft() {
+		var img = document.getElementById('img');
+			/*先向左移动一个图片的宽度  移动后在末尾追加第一个元素 然后将第一个元素移除 */
+			$('#img').animate({
+				left: -320
+			}, 1000, function() {
+				$('#img').append($('#img li:first').clone());
+				$('#img li:first').remove();
+			});
+		
+			/*将left值置为0*/
+			$('#img').animate({
+				left: 0
+			}, 0);
+		}
+		var timer = null;
+		function a(){
+			timer = setInterval(scrollLeft, 2500);
+		}
+		 
+		 img.onmouseover = function() {
+		  	clearInterval(timer);
+		 };
+		 img.onmouseout = a;
+		 a();
+		 
+		</script>
+
+		<div id="divides">
+			<h3></h3>
+		</div>
+	</body>
+</html>
