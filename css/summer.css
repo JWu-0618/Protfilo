@@ -1,0 +1,307 @@
+* {
+	padding: 0;
+	margin: 0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+#banner {
+	background: url(images/jennie02.png) no-repeat;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-size: cover;
+	background-color: black;
+	/* -webkit-filter: blur(20px);  /* chrome, opera */
+}
+
+.inner {
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#banner_title {
+	position: absolute;
+	bottom: 0;
+	left: 70px;
+	color: white;
+	opacity: 0;
+	/* display: flex;
+				justify-content: center; */
+}
+
+#banner_title h1 {
+	font-size: 110px;
+	font-weight: 400;
+	/* font-family: "SimHei"; */
+}
+
+#banner_title h6 {
+	font-size: 30px;
+	text-align: center;
+}
+
+#nav {
+	width: 100%;
+	background-color: white;
+	box-shadow: #CCCCCC 0px 5px 5px 0px;
+	position: fixed;
+	top: 0;
+	display: none;
+	z-index: 9999;
+}
+
+#bar {
+	width: 55%;
+	background-color: white;
+	height: 80px;
+	margin: 0 auto;
+	min-width: 1046px;
+}
+
+#bar div ul li {
+	display: inline;
+	margin-right: 15px;
+}
+
+#bar div ul li a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#bar div ul li a:visited {
+	color: black;
+}
+
+#bar div ul li a:hover {
+	color: pink;
+	cursor: pointer;
+	border-bottom: 2px solid pink;
+}
+
+#bar div ul {
+	float: right;
+	line-height: 80px;
+}
+
+#LOGO {
+	float: left;
+}
+
+#LOGO:hover {
+	cursor: pointer;
+}
+
+#LOGO img {
+	width: 200px;
+	margin-top: 20px;
+}
+
+#header {
+	width: 55%;
+	margin: 0 auto;
+	min-width: 1046px;
+	margin-top: 100px;
+}
+
+#header img {
+	width: 500px;
+}
+
+#headerResume {
+	width: 500px;
+	float: right;
+}
+
+#headerResume div p {
+	color: #CCCCCC;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+#headerResume div {
+	margin-top: 50px;
+}
+
+#clear {
+	clear: both;
+}
+
+#divides {
+	height: 100px;
+	width: 100%;
+	background-color: #f6f6f6;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#divides h3 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#divides p {
+	color: #CCCCCC;
+}
+
+#photo {
+	width: 55%;
+	margin: 0 auto;
+	min-width: 1046px;
+	display: flex;
+	justify-content: center;
+}
+
+#photo img {
+	width: 320px;
+	margin-top: 30px;
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+#photo img:hover {
+	-transform: scale(1.05);
+	z-index: 50;
+}
+
+#photo div {
+	width: 320px;
+}
+
+#photoLeft,
+#photoMid,
+#photoRight {
+	float: left;
+}
+
+#photoMid {
+	margin: 0 30px;
+}
+
+#awards {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+
+#awards p {
+	line-height: 30px;
+}
+
+#bottom {
+	margin: 0 auto;
+	height: 500px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	background-color: black;
+}
+
+#album {
+	margin: 0 auto;
+	/* text-align: center; */
+	width: 1400px;
+	min-width: 1400px;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+#album img {
+	margin-top: 80px;
+	width: 200px;
+}
+
+.Album_box img {
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+.Album_box img:hover {
+
+	-transform: scale(1.05);
+	z-index: 50;
+}
+
+#album div {
+	/* float: left; */
+	width: 200px;
+}
+
+#album1 {
+	margin-left: 100px;
+}
+
+#YGlogo {
+	margin-top: 50px;
+}
+
+
+
+.pop {
+	color: black;
+	width: 884px;
+	background-color: white;
+	height: 439px;
+	margin: 0 auto;
+	text-align: left;
+	position: fixed;
+	top: 30vh;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: none;
+}
+
+#pop_bg {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: 0.8;
+	z-index: 998;
+	display: none;
+}
+
+#popImg {
+	float: left;
+	width: 442px;
+}
+
+#popText {
+	width: 400px;
+	float: left;
+	padding: 20px;
+}
+
+#popText ul {
+	list-style-type: decimal;
+	margin: 30px;
+	color: #CCCCCC;
+}
+
+#popText ul li {
+	border-bottom: red 5px;
+	line-height: 30px;
+}
+
+#popText p {
+	text-indent: 2em;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 50px;
+}
+
+#exit {
+	width: 50px;
+	position: absolute;
+	cursor: pointer;
+}

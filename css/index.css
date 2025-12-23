@@ -1,0 +1,306 @@
+body {
+	background: black;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+video {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+	width: auto;
+	/*加滤镜*/
+	filter: blur(150px);
+	-webkit-filter: brightness(108.5%);
+	/*-webkit-filter: grayscale(100%);*/
+	filter: grayscale(0%);
+	z-index: -11
+}
+
+/* 	source {
+				min-width: 100%;
+				min-height: 100%;
+				height: auto;
+				width: auto;
+			} */
+
+/*p {
+				width: 100%;
+				text-align: center;
+				font-size: 40px;
+				color: white;
+			}*/
+
+
+#Header {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* max-height: 1200px; */
+	/* max-height: 100vh; */
+}
+
+#nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 85px;
+	min-width: 820px;
+}
+
+
+.img_logo {
+	width: 300px;
+	/* height: 60px; */
+	cursor: pointer;
+}
+
+.menu {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	width: 415px;
+}
+
+.menu a {
+	color: white;
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 1px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	margin: 0 2%;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid rgb(255, 0, 43);
+	color: rgb(255, 0, 43);
+}
+
+#subnav {
+	position: absolute;
+	bottom: 0;
+	left: 70px;
+	opacity: 0;
+	color: white;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#subnav h1 {
+	font-size: 110px;
+	font-weight: 400;
+	font-family: "SimHei";
+}
+
+/*#subnav h1 b{
+				font-size: 85px;
+				font-family: "SimHei";
+			}*/
+#subnav p {
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+#main {
+	width: 100%;
+	min-width: 820px;
+	/*height: 100vh;*/
+	background: black;
+	position: absolute;
+	top: 100%;
+	/* margin-top: 1300px; */
+	z-index: 20;
+}
+
+.main_box {
+	opacity: 0;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main_img {
+	width: 100%;
+	height: 100%;
+}
+
+.main_box div {
+	/*position: absolute;
+				bottom: 50px;
+				left: 0;
+				right: 0;*/
+	position: absolute;
+	font-size: 10.5rem;
+	color: white;
+	opacity: 0;
+}
+
+.footer {
+	width: 100%;
+	/*height: 400px;*/
+	background: black;
+	color: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*.footer_title{
+				font-size: 2.5rem;
+				font-weight: 200;
+				letter-spacing: 0.5px;
+				font-family: "SimHei";
+				margin: 35px auto;
+				height: 100px;
+				width: 100%;
+				text-align: center;
+				background: url(image/footer_title.png) no-repeat;
+				background-size: 1000px;
+			}*/
+.footer_title {
+	width: 800px;
+	margin: 20px auto;
+}
+
+.footer_li {
+	width: 70%;
+	height: 380px;
+}
+
+.footer_ul {
+	height: 100%;
+	width: 25%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer_ul h2 {
+	font-size: 30px;
+	margin: 30px auto;
+}
+
+.footer_ul h6 {
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 200;
+}
+
+.footer_logo {
+	margin-bottom: 20px;
+}
+
+.footer_logo img {
+	width: 160px;
+	/*height: 120px;*/
+}
+
+.main_box_top {
+	width: 100%;
+	height: 100vh;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main_top_conter {
+	width: 1400px;
+	height: 550px;
+	border: 4px pink solid;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#main_top_conter a {
+	text-align: center;
+	font-size: 50px;
+	margin: 20px 0;
+	color: white;
+	text-decoration: none;
+}
+
+#main_top_conter a:hover {
+	color: pink;
+	cursor: pointer;
+}
+
+#main_top_conter_img {
+	width: 90%;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+
+#main_top_conter_img img {
+	width: 100%;
+	height: 350px;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: all 0.7s;
+}
+
+#main_top_conter_img img:hover {
+	/*-webkit-filter: grayscale(100%);*/
+	opacity: 0.2;
+}
+
+.inner {
+	position: absolute;
+	width: 270px;
+	height: 350px;
+	margin: 10px 0;
+	cursor: pointer;
+	background: black;
+	opacity: 0;
+}
+
+.inner:hover {
+	opacity: 0.8;
+}
+
+.inner_p {
+	position: absolute;
+	bottom: 50px;
+	right: 0;
+	left: 0;
+	text-align: center;
+	font-size: 30px;
+	color: pink;
+}
+
+.main_top_conter_sideBar {
+	width: 270px;
+	height: auto;
+	/*height: 400px;*/
+	color: pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
